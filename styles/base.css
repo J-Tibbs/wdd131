@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato&family=Delius:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+
+    --main-font: "Bradley Hand", calibri, Lato;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+    display:flex;
+
+}
+
+.modern a {
+	flex: 1 1 100%;
+}
+
+
+
+.navigation {
+	list-style: none;
+	display: flex;
+	background-color: #A3101F;
+	align-items: center;
+    margin-top: 1rem;
+    outline-style: solid;
+    outline-color:#4e1016;
+    outline-width: .3rem;
+}
+.navigation a {
+    flex: 1 1 100%;
+    font-size:1.5rem;
+	display: block;
+	color: #eee;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center;
+}
+.navigation a:hover {
+	font-weight: 1000;
+	text-decoration:underline;
+	text-decoration-color: #4e1016;
+    text-decoration-thickness: .2rem;
+    outline-style:solid;
+    outline-color:#4e1016;
+    outline-width: .5rem;
+}
+
+.wrap {
+		flex-wrap: wrap;
+}
+
+
+main{
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+
+
+p {
+	font-size: 1.3em;
+    padding:.5em;
+}
+
+
+#aboutMeText img{
+    width:150px;
+    height:auto;
+    float:right;
+    margin: .7rem;
+}
+#aboutMeText p{
+    margin:0;
+}
+h2{
+    text-align:center;
+    font-size:1.5rem;
+    background-color: #C20114;
+    margin: 0;
+    border-radius: .5rem .5rem 0 0;
+    padding: 0.5rem;
+    color:ivory;
+    
+}
+
+
+
+
+
+body{
+    font-family: var(--main-font);
+    line-height:1.5;
+    background-color: #feeedd;
+}
+
+
+
+
+header{
+    text-align: center;
+    font-size:2rem;
+    padding-top: 2rem;
+    background-color: #C20114;
+    color:ivory;
+    
+
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    background-color:#F1B89B;
+    border-radius:.5rem;
+    min-height: 300px;
+}
+
+
+#resourcelinks{
+    display:flex;
+    justify-content: center;
+    height:80%;
+    font-size:1.5rem;
+    
+}
+
+footer{
+    font-size: 0.9rem;
+    background-color: #4e1016;
+    color:ivory;
+
+}
+footer p{
+    text-align:center;
+}
+
+#lastModified
+{
+    color: yellow;
+  font-size: smaller;
+}

@@ -3,11 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="author" content="Josh Tibbitts" />
+    <meta
+     name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Josh Tibbitts - About me and homepage" />
+    <link rel="stylesheet" href="styles/base.css" />
+
+    <title>WDD 131 - Dynamic Web Fundamentals - Josh Tibbitts
+    </title>
+
 </head>
 <body>
-    <h1>
-        WDD 131 - Josh Tibbitts
-    </h1>
+    <div class="parent">
+        <header>
+            <div id = "title">WDD 131 - Dynamic Web Fundamentals - Josh Tibbitts</div>
+                
+                <nav class="navigation modern">
+                    <a href="https://www.linkedin.com/" title="linkedin">LinkedIn</a>
+                    <a href="https://byui.instructure.com/" title="byui">BYU Idaho</a>
+                    <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/zech/13?lang=eng&id=p9#p9" title="scripture">Scripture</a>
+                    <a href="#" title="final">Final Project</a>
+               </nav>
+            
+            
+            
+        </header>
+
+
+    
+    <main>
+        <section class="card">
+           <h2>About Me</h2>
+            <div id = "aboutMeText">
+                <p>My name is Josh. I was born in Colorado. I am working towards a computer science degree. I love board games and I want to design video games in the future.</p>
+                <img src="images\picture-of-me(1).jpg" alt = "Picture of me"> 
+            </div>
+
+        </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+        <div id = "resourcelinks">
+            <ul>
+              <li><a href="https://coolors.co/generate">Coolors</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://codepen.io/">CodePen</a></li>
+
+            </ul>
+        </div>
+
+
+        </section>
+
+    </main>
+    <footer>
+        <p>
+            ©<span id="year"></span>
+         Josh Tibbitts - Idaho  
+
+
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</div>
+<script src = "scripts/getdates.js"></script>
+
 </body>
 </html>
