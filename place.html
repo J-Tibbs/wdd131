@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Responsive Images</title>
+    <meta name="description" content = "Place Assignment">
+    <meta name="author" content = "Josh Tibbitts">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+    <div class ="country-header">
+        <h1>Scotland</h1>
+
+    </div>
+    <div class="grid-container">
+    <picture>
+        <source srcset="images\Highland-Cow.webp" media="(max-width: 550px)">
+        <img src="images/Duart-Castle.webp" alt="Duart Castle in Scotland" width="335" height="425">
+    </picture>
+    <section id="data">
+        <h2>Data</h2>
+        <p>Area: 30,081 mi²</p>
+        <p>Population: 5.454 million</p>
+        <p>Capital: Edinburgh</p>
+        <p>Languages: English, Scottish Gaelic </p>
+        <p>Currency: Pound Sterling</p>
+        <p>Time Zone: GMT+1</p>
+        <p>Calling Code: +44</p>
+        <p>Internet TLD: .scot</p>
+    </section>
+    <section id="weather">
+        <h2>Weather</h2>
+        <img src="images\sun-behind-clouds.svg" alt = "Sun behind clouds">
+        <p>Temperature: <span id="temperature">56</span>°F</p>
+        <p>Comditions: Cloudy</p>
+        <p>Wind: <span id="windSpeed">10</span> mph</p>
+        <p>Wind Chill: <span id="windChill">N/A</span></p>
+    </section>
+
+
+
+</div>
+    <footer>
+        <p>
+            ©<span id="year"></span>
+         Josh Tibbitts - Idaho  
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+
+    </main>
+</body>
+
+
+</html>
