@@ -1,0 +1,114 @@
+:root {
+    --sky-color: #75A0E2;
+    --background-color: #F4F4F9;
+    --grass-color: #26941A;
+    --sandy-color: #FA9F42;
+}
+
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--sky-color);
+}
+
+/* Header styling */
+header {
+    background-color: var(--grass-color);
+    color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Logo styling */
+#logo-link {
+    max-width: 100px;
+    margin-bottom: 0.5rem;
+}
+
+/* Title styling */
+#title {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+/* Navigation styling */
+.navigation_modern {
+    display: flex;
+    flex-direction: column; /* Stack nav items vertically */
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--background-color);
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.navigation_modern :visited {
+    color:var(--background-color)
+}
+.navigation_modern :hover{
+    background-color: var(--sandy-color);
+    color:black;
+}
+
+/* Main content layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Question styling */
+#question {
+    text-align: center;
+    color: var(--background-color);
+    margin: 2rem auto auto 0;
+    font-size: 4rem;
+    background-color: var(--grass-color);
+    border: solid 10px #165d0e;
+    border-radius: 0 50px 50px 0;
+}
+
+/* Weather section styling */
+#weather{
+    text-align: center;
+    background-color: var(--sandy-color);
+    color: black;
+    font-size:1.5rem;
+    font-weight: 600;
+}
+#weather img{
+    display: block;
+    margin:auto;
+    width:70px;
+    height:70px;    
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--background-color);
+    background-color: var(--grass-color);
+    padding: 1px;
+
+
+}
+#scorecard{
+    background-color:rgb(187, 187, 187);
+    border: solid;
+    border-color:rgb(112, 114, 110);
+    border-width:10px;
+    max-width: 90%;
+}       
+#scorecard-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

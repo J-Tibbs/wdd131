@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is it a good day for disc golf</title>
+    <meta name="description" content = "A site to tell you whether or not the weather makes it a good day for disc golf">
+    <meta name="author" content = "Josh Tibbitts">
+    <link rel="stylesheet" href="styles/siteplan-style.css">
+    <link rel="stylesheet" href="styles/siteplan-style-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    
+    <!-- <button type="button" id="menu"></button> -->
+    <a id="logo-link" href="siteplan.html">
+      <img src="https://placecats.com/100/100" alt="Logo Placeholder">
+      <!-- logo placeholder -->
+    </a>
+    <h1 id = "title">Is it a good day for disc golf?</h1>
+        <nav class="navigation_modern">
+            <a href="siteplan.html" id = "home" title="home">Home</a>
+            <a href="courses-plan.html" id="courses">Courses</a>
+            <a href="scorecard-plan.html" id="score">Score Card</a>
+
+
+      </nav>
+    </header> 
+    <hr>
+
+  <main>
+    <div class="grid-container">
+      <section id="question">
+      <h1>Is it a good day for disc golf?</h1>
+      <h2 id="answer">Yes/No</h2>
+    </section>
+      <section id="weather">
+        <h2>Weather</h2>
+        <img src="images\sun-behind-clouds.svg" alt = "Sun behind clouds">
+        <p>Temperature: <span id="temperature">56</span>°F</p>
+        <p>Comditions: Cloudy</p>
+        <p>Wind: <span id="windSpeed">10</span> mph</p>
+        <p>Wind Chill: <span id="windChill">N/A</span></p>
+    </section>    
+    <div id="animation">on this side, I think it would be cool to have a little "animation" of a disc flying down the page as you scroll
+                      on the mobile screen, this would not be there and there would be a basic image of disc golf at this spot
+    </div>
+  </div>
+
+  </main>
+  <footer>
+    <p>
+        ©<span id="year"></span>
+    Josh Tibbitts - Idaho  
+    </p>
+    <p id="lastModified"></p>
+</footer>
+</body>
+</html>
