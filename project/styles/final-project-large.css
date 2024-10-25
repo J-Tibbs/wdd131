@@ -1,0 +1,59 @@
+@media screen and (min-width: 625px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 85% 15%;
+        gap: 1rem;
+    }
+
+    #question, #weather {
+        grid-column: 1 / 2; /* Main content in the first column */
+    }
+
+    #animation {
+        grid-column: 2 / 3; /* Animation in the second column */
+        height: 100%;
+    }
+
+    #weather{
+        background-color: var(--sandy-color);
+        width: 500px;
+        color: black;
+        font-size: 1.5rem;
+        border-radius: 0px 10px 10px 0px;
+    }
+    
+    #weather h2::after {
+        content: "⛅";
+    
+    
+    }
+    #weather img{
+        display: none;
+    }
+
+    header {
+        flex-direction: column; /* Stack logo and title vertically */
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    #title {
+        font-size: 3rem;
+        /* margin: 0.5rem 0; */
+        display:inline-block;
+    }
+
+    /* Navigation below title and logo, centered */
+    .navigation_modern {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
+        font-size: 2rem;
+        color: var(--background-color);
+    }
+
+
+    
+}

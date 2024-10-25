@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is it a good day for disc golf</title>
+    <meta name="description" content = "A site to tell you whether or not the weather makes it a good day for disc golf">
+    <meta name="author" content = "Josh Tibbitts">
+    <link rel="stylesheet" href="styles/final-project.css">
+    <link rel="stylesheet" href="styles/final-project-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    
+    <!-- <button type="button" id="menu"></button> -->
+    <a id="logo-link" href="final-project.html">
+      <img src="images/DiscGolfLogo.webp" alt="Disc Golf Logo" loading="lazy">
+      <!-- logo placeholder -->
+    </a>
+    <h1 id = "title">Is it a good day for disc golf?</h1>
+        <nav class="navigation_modern">
+            <a href="final-project.html" id = "home" title="home">Home</a>
+            <a href="courses.html" id="courses">Courses</a>
+            <a href="scorecard.html" id="score">Score Card</a>
+
+
+      </nav>
+    </header> 
+    <hr>
+
+  <main>
+    <div class="grid-container">
+      <section id="question">
+      <h1>Is it a good day for disc golf?</h1>
+      <h2 id="answer">Yes/No</h2>
+    </section>
+      <section id="weather">
+        <h2>Weather</h2>
+        <h3 id="location">Location: Loading...</h3>
+        <p>Temperature: <span id="temperature">Loading...</span>°F</p>
+        <p>Conditions: <span id="conditions">Loading...</span></p>
+        <p>Wind: <span id="windSpeed">Loading...</span> mph</p>
+        <p>Wind Chill: <span id="windChill">N/A</span></p>
+    </section>    
+  </div>
+
+  </main>
+  <footer>
+    <p>
+        ©<span id="year"></span>
+    Josh Tibbitts - Idaho  
+    </p>
+    <p id="lastModified"></p>
+</footer>
+<script src="scripts/final-project.js"></script>
+</body>
+</html>

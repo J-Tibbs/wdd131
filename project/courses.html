@@ -6,26 +6,28 @@
     <title>Courses - Is it a good day for disc golf</title>
     <meta name="description" content = "A page to help you find courses near you">
     <meta name="author" content = "Josh Tibbitts">
-    <link rel="stylesheet" href="styles/siteplan-style.css">
-    <link rel="stylesheet" href="styles/siteplan-style-large.css">
+    <link rel="stylesheet" href="styles/final-project.css">
+    <link rel="stylesheet" href="styles/final-project-large.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
   <header>
     
     <!-- <button type="button" id="menu"></button> -->
-    <a id="logo-link" href="siteplan.html">
-      <img src="https://placecats.com/100/100" alt="Logo Placeholder">
+    <a id="logo-link" href="final-project.html">
+      <img src="images/DiscGolfLogo.webp" alt="Disc Golf Logo" loading="lazy">
       <!-- logo placeholder -->
     </a>
     <h1 id = "title">Is it a good day for disc golf?</h1>
         <nav class="navigation_modern">
-            <a href="siteplan.html" id = "home" title="home">Home</a>
-            <a href="courses-plan.html" id="courses">Courses</a>
-            <a href="scorecard-plan.html" id="score">Score Card</a>
+            <a href="final-project.html" id = "home" title="home">Home</a>
+            <a href="courses.html" id="courses">Courses</a>
+            <a href="scorecard.html" id="score">Score Card</a>
 
 
       </nav>
@@ -35,11 +37,12 @@
   <main>
     <div class="grid-container">
     <div id="course-locator">
-      <p>This is where the course locator would be. The goal would be to have it be a somewhat interactable map, maybe via google maps</p>
-    </div>
-    <div id="animation">on this side, I think it would be cool to have a little "animation" of a disc flying down the page as you scroll</div>
+      <h1>Disc Golf Courses Near You</h1>
+      <h3> I haven't been able to figure out how to get the map to have a specific search filter, so here's a link to nearby courses:</h3>
+      <a href="https://www.google.com/maps/search/disc+golf+course+near+me/" id="courseLink">Courses near me</a>
+
+      <div id="map" style="height: 400px; width: 100%;"></div>
   </div>
-</div>
   </main>
   <footer>
     <p>
@@ -48,5 +51,6 @@
     </p>
     <p id="lastModified"></p>
 </footer>
+<script src="scripts/final-project.js"></script>
 </body>
 </html>
