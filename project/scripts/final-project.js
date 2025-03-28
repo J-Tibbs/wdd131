@@ -18,7 +18,7 @@ lastModified.innerHTML = `Last modified: ${oLastModif.toLocaleDateString()}`;
     const temperature = weather.main.temp;
     const conditions = weather.weather[0].description;
     const windSpeed = weather.wind.speed;
-    let isGoodForDiscGolf = temperature >= 65 && temperature <= 80 && windSpeed <= 15;
+    let isGoodForDiscGolf = temperature >= 50 && temperature <= 80 && windSpeed <= 15;
 
     // Update the HTML elements with the weather info and location
     document.getElementById('location').innerText = `Location: ${location}`;
